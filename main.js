@@ -67,9 +67,7 @@ Fg.on('group-participants-update', async (anu) => {
 					ppimg = 'https://i.ibb.co/PZNv21q/Profile-FG98.jpg'
 				}
 				teks = `Hola @${num.split('@')[0]}\nBienvenido/a al Grupo *${mdata.subject}*
-
-▢ *Pide las reglas del grupo* para evitar ser baneado
-
+▢ *LEE LAS REGLAS DEL GRUPO*
 ▢ *📌 Descripción :* \n${mdata.desc}
 `
 				
@@ -97,7 +95,7 @@ Fg.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i.ibb.co/PZNv21q/Profile-FG98.jpg'
 				}
-				teks = `≡ *ADMIN DEGRADADO*
+				teks = `≡ *ADMIN MUERTO*
 ┌──────────────
 ▢ *Nombre* : @${num.split('@')[0]}
 ▢ *Número* : ${num.replace('@s.whatsapp.net', '')}
@@ -112,7 +110,7 @@ Fg.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i.ibb.co/PZNv21q/Profile-FG98.jpg'
 				}
-				teks = `_Adios @${num.split('@')[0]}_`
+				teks = `_Adios NW @${num.split('@')[0]}_`
 				let buff = await getBuffer(ppimg)
 				Fg.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
